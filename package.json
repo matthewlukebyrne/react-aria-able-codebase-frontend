@@ -2,7 +2,7 @@
   "name": "react-aria-able-final-codebase-x17138744",
   "version": "1.0.0",
   "description": "final codebase for the React front end project and Aria-Able by Matthew Byrne",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "format": "prettier --write \"src/**/*.{js, jsx}\"",
     "lint": "eslint \"src/**/*.{js, jsx}\" --quiet",
@@ -15,10 +15,17 @@
     "@babel/preset-react": "^7.12.13",
     "eslint": "^7.18.0",
     "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
     "parcel": "^1.12.3",
     "prettier": "^2.3.2"
   },
   "browserslist": [
     "defaults"
-  ]
+  ],
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
 }
