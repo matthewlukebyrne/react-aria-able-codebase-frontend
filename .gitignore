@@ -1,0 +1,9 @@
+# Git ignores these files on commits
+
+node_modules/
+.cache
+dist/
+.env
+.DS_Store
+coverage/
+.vscode/
