@@ -1,16 +1,24 @@
+// import logo for now
+import landing_image from '../img/landing_image.svg';
+
 // import icons from Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
+import { StyledLayout, StyledDescription, StyledImage } from '../styles';
+
 const FeatureSection = () => {
   return (
-    <div data-testid='featuretest-id' className='services'>
-      <div className='description'>
+    <StyledLayout data-testid='featuretest-id'>
+       {/* Side Main Features Image */}
+      <StyledImage>
+        <img src={landing_image} alt='features_image' />
+      </StyledImage>
+      <StyledDescription>
         {/* Title */}
         <h2>
           High <span>quality</span> components
         </h2>
-
         {/* 4 Cards Replicated */}
         <div className='cards'>
           <div className='card'>
@@ -42,13 +50,8 @@ const FeatureSection = () => {
             <p>Lorem ipsum dolor sit amet.</p>
           </div>
         </div>
-      </div>
-
-      {/* Side Main Features Image */}
-      <div className='image'>
-        <img src='#' alt='features_image' />
-      </div>
-    </div>
+      </StyledDescription>
+    </StyledLayout>
   );
 };
 

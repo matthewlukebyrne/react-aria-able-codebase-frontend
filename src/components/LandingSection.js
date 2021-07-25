@@ -1,11 +1,10 @@
 // import landing image from /img
 import landing_image from '../img/landing_image.svg';
-
-import styled from 'styled-components';
+import { StyledLayout, StyledDescription, StyledImage, StyledHide } from '../styles';
 
 const LandingSection = () => {
   return (
-    <StyledLanding data-testid='landingtest-id'>
+    <StyledLayout data-testid='landingtest-id'>
       <StyledDescription>
         <div className='title'>
           <StyledHide>
@@ -27,39 +26,8 @@ const LandingSection = () => {
       <StyledImage>
         <img src={landing_image} alt='landing_image' />
       </StyledImage>
-    </StyledLanding>
+    </StyledLayout>
   );
 };
+
 export default LandingSection;
-
-// Styled Components
-const StyledLanding = styled.div`
-  min-height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5rem 10rem;
-  color: white;
-`;
-
-const StyledDescription = styled.div`
-  flex: 1;
-  padding-right: 5rem;
-  h2 {
-    font-weight: lighter;
-  }
-`;
-
-const StyledImage = styled.div`
-  flex: 1;
-  overflow: hidden;
-
-  img {
-    object-fit: cover;
-    height: 80vh;
-  }
-`;
-
-const StyledHide = styled.div`
-  overflow: hidden;
-`;
