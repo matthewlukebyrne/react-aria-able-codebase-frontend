@@ -7,6 +7,7 @@
     "format": "prettier --write \"src/**/*.{js, jsx}\"",
     "lint": "eslint \"src/**/*.{js, jsx}\" --quiet",
     "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
     "test": "react-scripts test"
   },
   "author": "Matthew Byrne",
@@ -23,6 +24,7 @@
     "eslint-plugin-react": "^7.22.0",
     "firebase-tools": "^9.16.0",
     "parcel": "^1.12.3",
+    "parcel-bundler": "^1.12.5",
     "prettier": "^2.3.2"
   },
   "browserslist": [
