@@ -52,7 +52,7 @@ jobs:
       # Runs out CURRENT production build using Parcel (minified JS bundler)
       - run:
           name: Runs Parcel Bundler for Compiled Build (target Distfolder)
-          command: npm run dev
+          command: npm run build
 
       # Targets node_modules folder for Firebase and then looks for a key on CircleCI ENV variables key that is stored on the CIRCLE CI website
       - run: ./node_modules/.bin/firebase deploy --token="$FIREBASE_DEPLOY_TOKEN"
