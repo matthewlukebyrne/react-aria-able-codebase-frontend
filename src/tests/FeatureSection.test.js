@@ -1,15 +1,11 @@
-import { icon } from '@fortawesome/fontawesome-svg-core';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-import { render, screen, cleanup } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { shallow } from 'enzyme';
 import FeatureSection from '../components/FeatureSection';
-import LandingSection from '../components/LandingSection';
-import FrontPage from '../pages/FrontPage';
 
 // TDD - Red Green Refactor
 describe('Feature Section Component Unit Tests', () => {
   // the first test
-  it('render the front page component without crashing', () => {
+  it('render the feature section component without crashing', () => {
     render(<FeatureSection />);
     const featureSectionPonent = screen.getByTestId('featuretest-id');
     // make assertions
@@ -28,5 +24,11 @@ describe('Feature Section Component Unit Tests', () => {
     expect(icon_2).toBeInTheDocument();
     expect(icon_3).toBeInTheDocument();
     expect(icon_4).toBeInTheDocument();
+  });
+
+  it('feature section should contain four H3 tags', () => {
+    const featureQuery = shallow(<FeatureSection />);
+    const featureH3Tags = featureQuery.find('h3');
+    expect(featureH3Tags).toHaveLength(4);
   });
 });

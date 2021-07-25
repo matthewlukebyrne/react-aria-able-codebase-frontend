@@ -1,4 +1,5 @@
 // Imports from a combination of Jest, React Library and Enzyme
+import { render, screen } from '@testing-library/react';
 import { shallow } from 'enzyme';
 import App from '../App';
 import FrontPage from '../pages/FrontPage';
@@ -8,7 +9,10 @@ import FrontPage from '../pages/FrontPage';
 describe('App Components Unit Tests', () => {
   // the first test
   it('render the primary component without crashing', () => {
-    const appWrapper = shallow(<App />);
+    render(<App />);
+    const app = screen.getByTestId('apptest-id');
+    // make assertions
+    expect(app).toBeInTheDocument();
   });
 
   it('render the Front Page and only expects one render from App Component', () => {

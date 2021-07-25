@@ -43,7 +43,7 @@ const FeatureSection = () => {
           </div>
         </div>
       </div>
-      
+
       {/* Side Main Features Image */}
       <div className='image'>
         <img src='#' alt='features_image' />
