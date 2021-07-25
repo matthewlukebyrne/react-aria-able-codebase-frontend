@@ -1,9 +1,11 @@
+import AboutUs from "./pages/AboutUs"
+
 const App = () => {
-  return ( 
-    <div>
-      <h1>Hello from React</h1>
+  return (
+    <div className="App">
+        <AboutUs />
     </div>
-   );
-}
- 
+  );
+};
+
 export default App;
