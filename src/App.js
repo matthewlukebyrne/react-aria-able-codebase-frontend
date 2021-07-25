@@ -1,9 +1,11 @@
+import FrontPage from './pages/FrontPage';
+
 const App = () => {
-  return ( 
-    <div>
-      <h1>Hello from React</h1>
+  return (
+    <div data-testid='apptest-id' className='App'>
+      <FrontPage />
     </div>
-   );
-}
- 
+  );
+};
+
 export default App;
