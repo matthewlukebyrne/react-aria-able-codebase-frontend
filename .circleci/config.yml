@@ -1,0 +1,58 @@
+version: 2.0
+jobs:
+  build:
+    branches:
+      only:
+        - main
+
+    # Use of Docker Image for Circle CI
+    docker:
+      - image: circleci/node:latest-browsers
+
+    # targeting the github repo - https://github.com/matthewlukebyrne/react-aria-able-codebase-frontend
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys:
+            - v2-dependencies-{{ checksum "package.json" }}
+            - v2-dependencies-
+
+      - run:
+          name: Install React NPM Application Dependencies
+          command: npm install
+
+      - run:
+          name: Install Backend Dependencies for Firebase Live Deployment Strategy
+          command: cd functions && npm install
+
+      # Runs Linter (single quotes, tabs clean up code)
+      - run:
+          name: Run Prettier Formatter (Organising Code with help of .prettierrc)
+          command: npm run format
+      
+      # Runs Linter (checks for typos, syntax mistakes and errors in code)
+      - run:
+          name: Run ES Lint Formatter (Organising Code with help of .eslintrc)
+          command: npm run lint
+
+      # Saves cache on node_modules folder on previous re-run
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+
+      # Runs Jest, Enzyme, and React Library Tests
+      - run:
+          name: Run Testing in Jest & Enzyme & React Library
+          command: npm test
+
+      # Runs out CURRENT production build using Parcel (minified JS bundler)
+      - run:
+          name: Runs Parcel Bundler for Compiled Build (target Distfolder)
+          command: npm run dev
+
+      # Targets node_modules folder for Firebase and then looks for a key on CircleCI ENV variables key that is stored on the CIRCLE CI website
+      - run: ./node_modules/.bin/firebase deploy --token="$FIREBASE_DEPLOY_TOKEN"
