@@ -1,9 +1,13 @@
-import LandingSection from "../components/LandingSection";
+import FeatureSection from '../components/FeatureSection';
+import LandingSection from '../components/LandingSection';
 
 const FrontPage = () => {
-    return ( 
-        <LandingSection />
-    );
-}
- 
+  return (
+    <div data-testid='frontpagetest-id'>
+      <LandingSection />
+      <FeatureSection />
+    </div>
+  );
+};
+
 export default FrontPage;

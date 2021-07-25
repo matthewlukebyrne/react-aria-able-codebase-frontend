@@ -1,23 +1,26 @@
 const LandingSection = () => {
-    return ( 
-        <div>
-            <div className="description">
-                <div className="title">
-                    <div className="hide">
-                        <h2>Accessible style components</h2>
-                    </div>
-                    <div className="hide">
-                        <h2>made easy and <span>stylistic</span></h2>
-                    </div>
-                     <div className="hide">
-                        <h2>forever</h2>
-                    </div>
-                </div>
-                <p>Contact us for any details in the future...</p>
-                <button>Find Out More</button>
-            </div>
-                <img src="#" alt="landing_image" />
+  return (
+    <div data-testid='landingtest-id'>
+      <div className='description'>
+        <div className='title'>
+          <div className='hide'>
+            <h2>Accessible</h2>
+          </div>
+          <div className='hide'>
+            <h2>
+              {' '}
+              style <span> components </span>
+            </h2>
+          </div>
+          <div className='hide'>
+            <h2> made easy...</h2>
+          </div>
         </div>
-    );
-}
+        <p>Download Now</p>
+        <button>Find Out More</button>
+      </div>
+      <img src='#' alt='landing_image' />
+    </div>
+  );
+};
 export default LandingSection;

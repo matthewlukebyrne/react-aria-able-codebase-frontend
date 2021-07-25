@@ -1,9 +1,9 @@
-import FrontPage from "./pages/FrontPage"
+import FrontPage from './pages/FrontPage';
 
 const App = () => {
   return (
-    <div className="App">
-        <FrontPage />
+    <div className='App'>
+      <FrontPage />
     </div>
   );
 };
