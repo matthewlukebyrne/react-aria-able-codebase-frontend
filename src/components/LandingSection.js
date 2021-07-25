@@ -1,4 +1,4 @@
-const Landing = () => {
+const LandingSection = () => {
     return ( 
         <div>
             <div className="description">
@@ -20,4 +20,4 @@ const Landing = () => {
         </div>
     );
 }
-export default Landing;
+export default LandingSection;
