@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Landing Section Component Unit Tests landing section styled components 1`] = `
+.c0 {
+  min-height: 90vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0rem 10rem;
+  color: white;
+}
+
+.c1 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding-right: 5rem;
+  z-index: 2;
+}
+
+.c1 h2 {
+  padding-bottom: 1rem;
+  font-weight: lighter;
+}
+
+.c3 {
+  z-index: 2;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: hidden;
+}
+
+.c3 img {
+  padding: 2rem;
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+.c2 {
+  overflow: hidden;
+}
+
+@media (max-width:1300px) {
+  .c0 {
+    display: block;
+    padding: 5rem 2rem;
+    text-align: center;
+  }
+}
+
+@media (max-width:1300px) {
+  .c1 {
+    display: block;
+    padding: 5rem 2rem;
+    text-align: center;
+  }
+}
+
+@media (max-width:1300px) {
+  .c3 {
+    display: block;
+    padding: 5rem 2rem;
+    text-align: center;
+  }
+
+  .c3 img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+}
+
+<div
+  className="c0"
+  data-testid="landingtest-id"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="title"
+    >
+      <div
+        className="c2"
+      >
+        <h2>
+          Accessible
+        </h2>
+      </div>
+      <div
+        className="c2"
+      >
+        <h2>
+           
+          style 
+          <span>
+             components 
+          </span>
+        </h2>
+      </div>
+      <div
+        className="c2"
+      >
+        <h2>
+           made easy...
+        </h2>
+      </div>
+    </div>
+    <p>
+      Download and check out today!
+    </p>
+    <button>
+      Find Out More
+    </button>
+  </div>
+  <div
+    className="c3"
+  >
+    <img
+      alt="landing_image"
+      src="landing_image.svg"
+    />
+  </div>
+</div>
+`;

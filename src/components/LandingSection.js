@@ -1,26 +1,38 @@
+// import landing image from /img
+import landing_image from '../img/landing_image.svg';
+import {
+  StyledLayout,
+  StyledDescription,
+  StyledImage,
+  StyledHide,
+} from '../styles';
+
 const LandingSection = () => {
   return (
-    <div data-testid='landingtest-id'>
-      <div className='description'>
+    <StyledLayout data-testid='landingtest-id'>
+      <StyledDescription>
         <div className='title'>
-          <div className='hide'>
+          <StyledHide>
             <h2>Accessible</h2>
-          </div>
-          <div className='hide'>
+          </StyledHide>
+          <StyledHide>
             <h2>
               {' '}
               style <span> components </span>
             </h2>
-          </div>
-          <div className='hide'>
+          </StyledHide>
+          <StyledHide>
             <h2> made easy...</h2>
-          </div>
+          </StyledHide>
         </div>
-        <p>Download Now</p>
+        <p>Download and check out today!</p>
         <button>Find Out More</button>
-      </div>
-      <img src='#' alt='landing_image' />
-    </div>
+      </StyledDescription>
+      <StyledImage>
+        <img src={landing_image} alt='landing_image' />
+      </StyledImage>
+    </StyledLayout>
   );
 };
+
 export default LandingSection;
