@@ -31,10 +31,4 @@ describe('Feature Section Component Unit Tests', () => {
     const featureH3Tags = featureQuery.find('h3');
     expect(featureH3Tags).toHaveLength(4);
   });
-
-  // test('feature section should render in whitesmoke', () => {
-  //   const landingStyles = renderer.create(<FeatureSection />).toJSON();
-  //   expect(landingStyles).toMatchSnapshot();
-  //   expect(landingStyles).toHaveStyleRule('background-color', 'whitesmoke');
-  // });
 });
