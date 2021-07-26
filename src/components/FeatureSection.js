@@ -12,7 +12,7 @@ import { StyledLayout, StyledDescription, StyledImage } from '../styles';
 const FeatureSection = () => {
   return (
     <StyledFeatures data-testid='featuretest-id'>
-       {/* Side Main Features Image */}
+      {/* Side Main Features Image */}
       <StyledImage>
         <img src={landing_image} alt='features_image' />
       </StyledImage>
@@ -59,12 +59,13 @@ const FeatureSection = () => {
 
 export default FeatureSection;
 
-
+// Styled Components Area
 const StyledFeatures = styled(StyledLayout)`
   background-color: whitesmoke;
   color: #333;
 
-  h2, p {
+  h2,
+  p {
     padding: 5rem 0rem;
     color: #333;
   }
@@ -73,12 +74,12 @@ const StyledFeatures = styled(StyledLayout)`
     width: 100%;
     height: 70vh;
     object-fit: cover;
-  } 
+  }
 
-	// Inserted some mobile media queries (drop it when it shrinks)
-	@media (max-width: 1300px) {
-		display: none;
-	}
+  // Inserted some mobile media queries (drop it when it shrinks)
+  @media (max-width: 1300px) {
+    display: none;
+  }
 `;
 
 // const StyledCards = styled.div`
@@ -96,7 +97,7 @@ const StyledFeatures = styled(StyledLayout)`
 // 		border-radius: 16px;
 // 		color: #1b1b1b;
 // 		padding: 1rem;
-// 	} 
+// 	}
 //  Font Awesome Icons
 // .icon {
 //   display: flex;
