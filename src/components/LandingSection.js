@@ -1,6 +1,11 @@
 // import landing image from /img
 import landing_image from '../img/landing_image.svg';
-import { StyledLayout, StyledDescription, StyledImage, StyledHide } from '../styles';
+import {
+  StyledLayout,
+  StyledDescription,
+  StyledImage,
+  StyledHide,
+} from '../styles';
 
 const LandingSection = () => {
   return (

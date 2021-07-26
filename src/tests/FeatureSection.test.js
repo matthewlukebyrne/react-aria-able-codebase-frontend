@@ -1,6 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import { shallow } from 'enzyme';
 import FeatureSection from '../components/FeatureSection';
+import renderer from 'react-test-renderer';
+
 
 // TDD - Red Green Refactor
 describe('Feature Section Component Unit Tests', () => {
@@ -30,5 +32,11 @@ describe('Feature Section Component Unit Tests', () => {
     const featureQuery = shallow(<FeatureSection />);
     const featureH3Tags = featureQuery.find('h3');
     expect(featureH3Tags).toHaveLength(4);
+  });
+
+  test('feature section should render in whitesmoke', () => {
+    const landingStyles = renderer.create(<FeatureSection />).toJSON();
+    expect(landingStyles).toMatchSnapshot();
+    expect(landingStyles).toHaveStyleRule('background-color', 'whitesmoke');
   });
 });
