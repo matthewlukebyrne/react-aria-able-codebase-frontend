@@ -1,6 +1,12 @@
 # Getting Started with React Aria-Able Frontend Site
 
-This project was built from scratch using a range of amazing tools.
+This project was built from scratch from a empty folder to then using a huge range of amazing tools. Along the way learning these tools and seeing how they all click together was the most satisfying part of the project!
+
+## React (17.10) & React Router
+
+https://reactjs.org/
+
+https://reactrouter.com/
 
 ## Available Scripts
 
@@ -39,7 +45,6 @@ https://testing-library.com/docs/react-testing-library/intro/
 https://enzymejs.github.io/enzyme/
 
 Runs the app in test mode using a combination of React Testing Library, Enzyme and Jest Framework.
-
 
 ___________________________________________________________________
 
