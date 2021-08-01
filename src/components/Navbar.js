@@ -1,20 +1,21 @@
 import styled from 'styled-components';
 
+// Using React Router DOM we can use the "Link" atrribute to switch routing on the href
+import { Link } from 'react-router-dom';
+
+
 const Navbar = () => {
   return (
     <StyledNavbar data-testid='navtest-id'>
       <h1>
-        <a href='a'> </a>Aria-Able
+        <Link to='/'>Aria-Able</Link>
       </h1>
       <ul>
         <li>
-          <a href='a'>Components</a>
+          <Link to='/components'>Components</Link>
         </li>
         <li>
-          <a href='a'>Gallery</a>
-        </li>
-        <li>
-          <a href='a'>Contact</a>
+          <Link to='/contact'>Contact</Link>
         </li>
       </ul>
     </StyledNavbar>
@@ -39,7 +40,7 @@ const StyledNavbar = styled.nav`
   a {
     color: #1b1b1b;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 3rem;
   }
   ul {
     display: flex;
@@ -67,7 +68,7 @@ const StyledNavbar = styled.nav`
     }
     ul {
       padding: 2rem 1rem;
-      justify-content: space-between;
+      justify-content: space-evenly;
       width: 100%;
       li {
         padding: 0;
