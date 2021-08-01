@@ -54,10 +54,6 @@ h4 {
     color: #e74e16;
 }
 
-a {
-    font-size: 1.1rem;
-}
-
 span {
     font-weight: bold;
     color: #e74e16;
