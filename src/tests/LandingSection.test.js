@@ -11,7 +11,7 @@ describe('Landing Section Component Unit Tests', () => {
     // make assertions
     expect(landingSectionPonent).toBeInTheDocument();
     expect(landingSectionPonent).toHaveTextContent(
-      'Accessible style components made easy...'
+      'Accessible styled components all in one place...'
     );
   });
 

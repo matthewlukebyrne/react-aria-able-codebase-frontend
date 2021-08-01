@@ -13,27 +13,34 @@ import Components from './pages/Components';
   The Route Facilates the full routing of the application
   A Switch stops when it comes across the EXACT URL
 */
-import { Switch, Route } from 'react-router-dom';
+import {BrowserRouter, Switch, Route } from 'react-router-dom';
+import NotFound from './pages/NotFound';
 
 const App = () => {
   return (
     <div data-testid='apptest-id' className='App'>
-      <GlobalStyle />
-      <Navbar />
-      <Switch>
-        {/* Home Path */}
-        <Route path="/" exact>
-          <FrontPage />
-        </Route>
-        {/* Components Path */}
-        <Route path="/components">
-          <Components />
-        </Route>
-        {/* Contact Path */}
-        <Route path="/contact">
-          <Contact />
-        </Route>
-      </Switch>
+      <BrowserRouter>
+        <GlobalStyle />
+        <Navbar />
+        <Switch>
+          {/* Home Path */}
+          <Route path='/' exact>
+            <FrontPage />
+          </Route>
+          {/* Components Path */}
+          <Route path='/components'>
+            <Components />
+          </Route>
+          {/* Contact Path */}
+          <Route path='/contact'>
+            <Contact />
+          </Route>
+          {/* If all else fails 404 not Found */}
+          <Route>
+            <NotFound />
+          </Route>
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 };

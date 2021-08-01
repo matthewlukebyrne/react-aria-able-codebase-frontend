@@ -39,10 +39,9 @@ export const StyledImage = styled.div`
   flex: 1;
   overflow: hidden;
   img {
-    padding: 2rem;
+    padding: 5rem;
     width: 100%;
-    height: 80vh;
-    object-fit: cover;
+    height: 100vh;
   }
 
   // Inserted some mobile media queries

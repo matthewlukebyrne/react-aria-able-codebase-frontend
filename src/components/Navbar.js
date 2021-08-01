@@ -3,7 +3,6 @@ import styled from 'styled-components';
 // Using React Router DOM we can use the "Link" atrribute to switch routing on the href
 import { Link } from 'react-router-dom';
 
-
 const Navbar = () => {
   return (
     <StyledNavbar data-testid='navtest-id'>

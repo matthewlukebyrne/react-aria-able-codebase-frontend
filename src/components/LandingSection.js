@@ -18,14 +18,14 @@ const LandingSection = () => {
           <StyledHide>
             <h2>
               {' '}
-              style <span> components </span>
+              styled <span> components </span>
             </h2>
           </StyledHide>
           <StyledHide>
-            <h2> made easy...</h2>
+            <h2> all in one place...</h2>
           </StyledHide>
         </div>
-        <p>Download and check out today!</p>
+        <p>Check out the project today!</p>
         <button>Find Out More</button>
       </StyledDescription>
       <StyledImage>

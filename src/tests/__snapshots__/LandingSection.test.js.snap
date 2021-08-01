@@ -41,10 +41,9 @@ exports[`Landing Section Component Unit Tests landing section styled components 
 }
 
 .c3 img {
-  padding: 2rem;
+  padding: 5rem;
   width: 100%;
-  height: 80vh;
-  object-fit: cover;
+  height: 100vh;
 }
 
 .c2 {
@@ -103,7 +102,7 @@ exports[`Landing Section Component Unit Tests landing section styled components 
       >
         <h2>
            
-          style 
+          styled 
           <span>
              components 
           </span>
@@ -113,12 +112,12 @@ exports[`Landing Section Component Unit Tests landing section styled components 
         className="c2"
       >
         <h2>
-           made easy...
+           all in one place...
         </h2>
       </div>
     </div>
     <p>
-      Download and check out today!
+      Check out the project today!
     </p>
     <button>
       Find Out More
