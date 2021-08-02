@@ -1,5 +1,5 @@
 // import logo for now
-import features_snap from '../img/features_snap.png';
+import features_snap from '../img/landing_img.png';
 
 // import icons from Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
