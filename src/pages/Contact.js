@@ -1,9 +1,19 @@
 import styled from 'styled-components';
 import profile_pic from '../img/profile.jpg';
 
+
+// Import Framer Motion for Page animations
+import { motion } from 'framer-motion';
+import { pageAnimation } from '../animation';
+
 const Contact = () => {
   return (
-    <StyledContact>
+    <StyledContact
+      exit='exit'
+      variants={pageAnimation}
+      initial='hidden'
+      animate='show'
+    >
       <div>
         <StyledSocial>
           <StyledCircle />
@@ -29,11 +39,7 @@ const Contact = () => {
         </StyledSocial>
         <StyledSocial>
           <StyledCircle />
-          <a
-            href='https://www.kooba.ie/'
-            target='_blank'
-            rel='noreferrer'
-          >
+          <a href='https://www.kooba.ie/' target='_blank' rel='noreferrer'>
             {' '}
             <h2>Kooba</h2>
           </a>
@@ -48,7 +54,7 @@ const Contact = () => {
 
 export default Contact;
 
-const StyledContact = styled.div`
+const StyledContact = styled(motion.div)`
   display: flex;
   align-items: center;
   justify-content: center;
