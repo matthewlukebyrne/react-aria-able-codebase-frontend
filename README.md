@@ -2,7 +2,7 @@
 
 This project was built from scratch from a empty folder to then using a huge range of amazing tools. Along the way learning these tools and seeing how they all click together was the most satisfying part of the project!
 
-## React (17.10) & React Router
+## React (v17.10) & React Router
 
 https://reactjs.org/
 
