@@ -45,9 +45,9 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # Runs Jest, Enzyme, and React Library Tests
-      # - run:
-      #     name: Run Testing in Jest & Enzyme & React Library
-      #     command: npm test
+      - run:
+          name: Run Testing in Jest & Enzyme & React Library
+          command: npm test
 
       # Runs out CURRENT production build using Parcel (minified JS bundler)
       - run:
