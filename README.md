@@ -46,7 +46,7 @@ https://enzymejs.github.io/enzyme/
 
 Runs the app in test mode using a combination of React Testing Library, Enzyme and Jest Framework.
 
-___________________________________________________________________
+____________________________________________________________________
 
 
 # Builds, Deployments and Continious Intergration / Deployment

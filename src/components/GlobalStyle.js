@@ -67,6 +67,10 @@ p {
     line-height: 150%;
 }
 
+a {
+    color: #f5f5f5;
+}
+
 `;
 
 // Export Global Style
