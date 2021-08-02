@@ -41,6 +41,7 @@ exports[`Landing Section Component Unit Tests landing section styled components 
 }
 
 .c3 img {
+  border-radius: 5%;
   padding: 5rem;
   width: 100%;
   height: 100vh;
@@ -128,7 +129,7 @@ exports[`Landing Section Component Unit Tests landing section styled components 
   >
     <img
       alt="landing_image"
-      src="landing_image.svg"
+      src="landing_logo.svg"
     />
   </div>
 </div>

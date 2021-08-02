@@ -39,7 +39,7 @@ const StyledNavbar = styled.nav`
   a {
     color: #1b1b1b;
     text-decoration: none;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   ul {
     display: flex;

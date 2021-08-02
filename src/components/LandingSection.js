@@ -1,5 +1,5 @@
 // import landing image from /img
-import landing_image from '../img/landing_image.svg';
+import landing_image from '../img/landing_logo.svg';
 import {
   StyledLayout,
   StyledDescription,

@@ -8,18 +8,20 @@ import Navbar from './components/Navbar';
 import Contact from './pages/Contact';
 // Import the Contact Page
 import Components from './pages/Components';
+// import Ponents Details
+import PonentDetails from './pages/PonentDetails';
+
 /*
   Using React Router we can direct the pages we want to go to
   The Route Facilates the full routing of the application
   A Switch stops when it comes across the EXACT URL
 */
-import {BrowserRouter, Switch, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router';
 import NotFound from './pages/NotFound';
 
 const App = () => {
   return (
     <div data-testid='apptest-id' className='App'>
-      <BrowserRouter>
         <GlobalStyle />
         <Navbar />
         <Switch>
@@ -28,8 +30,12 @@ const App = () => {
             <FrontPage />
           </Route>
           {/* Components Path */}
-          <Route path='/components'>
+          <Route path='/components' exact>
             <Components />
+          </Route>
+          {/* Dynamic text to get a hold */}
+          <Route path="/components/:id">
+            <PonentDetails />
           </Route>
           {/* Contact Path */}
           <Route path='/contact'>
@@ -40,7 +46,6 @@ const App = () => {
             <NotFound />
           </Route>
         </Switch>
-      </BrowserRouter>
     </div>
   );
 };
