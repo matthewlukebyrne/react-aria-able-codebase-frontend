@@ -93,26 +93,3 @@ const StyledFeatures = styled(StyledLayout)`
     display: none;
   }
 `;
-
-// const StyledCards = styled.div`
-// 	margin: 5rem 0rem;
-// 	display: flex;
-// 	flex-wrap: wrap;
-// 	font-size: 1.5rem;
-// `;
-
-// const StyledCard = styled.div`
-//   // 	flex-basis: 100rem;
-//   // 	h3 {
-//   // 		margin-left: 5rem;
-//   // 		background: #fff;
-//   // 		border-radius: 16px;
-//   // 		color: #1b1b1b;
-//   // 		padding: 1rem;
-//   // 	}
-//   //  Font Awesome Icons
-//   .icon {
-//     display: flex;
-//     align-items: center;
-//   }
-// `;

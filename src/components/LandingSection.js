@@ -45,14 +45,14 @@ const LandingSection = () => {
           </StyledHide>
         </div>
         <p>Check out the project today!</p>
-        <button>
-          <a
+        <a
             href='https://project-aria-able-backend-web-app.netlify.app'
             alt='link_to_storybook'
             target='_blank'
             rel='noreferrer'
-          >Find Out More</a>
-        </button>
+          ><button>
+          Find Out More
+        </button></a>
       </StyledDescription>
       <StyledImage>
         <motion.img
