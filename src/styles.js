@@ -42,7 +42,7 @@ export const StyledImage = styled.div`
     border-radius: 5%;
     padding: 5rem;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
   }
 
   // Inserted some mobile media queries

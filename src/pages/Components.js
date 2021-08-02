@@ -2,9 +2,18 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
+// Import Framer Motion for Page animations
+import { motion } from 'framer-motion';
+import { pageAnimation } from '../animation';
+
 const Components = () => {
   return (
-    <StyledWork>
+    <StyledWork
+      exit='exit'
+      variants={pageAnimation}
+      initial='hidden'
+      animate='show'
+    >
       <StyledPonent>
         <Link to='/components/alert-role'>
           <h2>Alert</h2>
@@ -103,7 +112,7 @@ export default Components;
 
 
 // Styled Components
-const StyledWork = styled.div`
+const StyledWork = styled(motion.div)`
   min-height: 100vh;
   overflow: hidden;
   padding: 5rem 10rem;

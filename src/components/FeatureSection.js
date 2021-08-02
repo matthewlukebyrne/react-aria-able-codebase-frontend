@@ -1,6 +1,3 @@
-// import logo for now
-import features_snap from '../img/landing_img.png';
-
 // import icons from Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -12,7 +9,7 @@ import {
 
 // Styled Components
 import styled from 'styled-components';
-import { StyledLayout, StyledDescription, StyledImage } from '../styles';
+import { StyledLayout, StyledDescription } from '../styles';
 
 const FeatureSection = () => {
   return (
@@ -74,9 +71,6 @@ const FeatureSection = () => {
         </div>
       </StyledDescription>
     </StyledFeatures>
-    <StyledImage>
-        <img src={features_snap} alt='features_image' />
-    </StyledImage>
     </>
   );
 };
@@ -86,12 +80,12 @@ export default FeatureSection;
 // Styled Components Area
 const StyledFeatures = styled(StyledLayout)`
   background-color: whitesmoke;
-  color: #333;
+  color: #1b1b1b;
 
   h2,
   p {
     padding: 3rem 0rem;
-    color: #333;
+    color: #1b1b1b;
   }
 
   // Inserted some mobile media queries (drop it when it shrinks)

@@ -3,6 +3,10 @@ import styled from 'styled-components';
 import { useHistory } from 'react-router-dom';
 import { PonentState } from '../ponentState';
 
+// Import Framer Motion for Page animations
+import { motion } from 'framer-motion';
+import { pageAnimation } from '../animation';
+
 
 const PonentDetails = () => {
 
@@ -33,7 +37,12 @@ const PonentDetails = () => {
       <>
         {/* Deliver the component OR */}
         {ponent && (
-          <StyledDetails>
+          <StyledDetails
+            exit='exit'
+            variants={pageAnimation}
+            initial='hidden'
+            animate='show'
+          >
             <StyledHeadline>
               <h2>{ponent.title}</h2>
               <img src={ponent.mainImg} alt='main_img' />
@@ -57,8 +66,8 @@ const PonentDetails = () => {
 export default PonentDetails;
 
 
-// Styled Components
-const StyledDetails = styled.div`
+// Styled Components (With Importing Framer Motion)
+const StyledDetails = styled(motion.div)`
     color: white;
 `;
 
@@ -77,16 +86,17 @@ const StyledHeadline = styled.div`
 
     img {
         width: 100%;
-        height: 40vh;
+        height: 30vh;
         object-fit: cover;
         padding: 0rem 20rem;
     }
 `;
 
 const StylePonent = styled.div`
+  padding: 0rem 5rem;
   h3 {
     font-size: 1.5rem;
-    text-align: center;
+    text-align: justify;
   }
   .line {
     width: 100%;
@@ -96,7 +106,7 @@ const StylePonent = styled.div`
   }
   p {
     padding: 1rem 0rem;
-    text-align: center;
+    text-align: justify;
   }
 `;
 

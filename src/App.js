@@ -10,6 +10,9 @@ import Contact from './pages/Contact';
 import Components from './pages/Components';
 // import Ponents Details
 import PonentDetails from './pages/PonentDetails';
+// Fix Scroll Top Issue when navigating pages
+import ScrollTop from './components/ScrollTop';
+
 
 /*
   Using React Router we can direct the pages we want to go to
@@ -23,6 +26,7 @@ const App = () => {
   return (
     <div data-testid='apptest-id' className='App'>
         <GlobalStyle />
+        <ScrollTop />
         <Navbar />
         <Switch>
           {/* Home Path */}
